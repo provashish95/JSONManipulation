@@ -7,7 +7,7 @@ import java.io.IOException;
 public class FileWrite {
     public static void main(String[] args) throws IOException {
 
-        writeFile("./src/main/resources/test.txt", true);
+        //writeFile("./src/main/resources/test.txt", true);
         readFile("./src/main/resources/test.txt");
 
     }
@@ -23,8 +23,11 @@ public class FileWrite {
 
     public static void readFile(String fileUrl) throws IOException {
         FileReader fr = new FileReader(fileUrl);
-        int character = fr.read();
-        System.out.println(character);
+
+        int character;
+        while((character = fr.read()) != -1) {
+            System.out.print((char)character);
+        }
     }
 
 }
