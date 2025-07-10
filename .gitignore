@@ -2,7 +2,7 @@
 .idea
 gradle/
 build/
-build.gradle/
+
 
 !gradle/wrapper/gradle-wrapper.jar
 !**/src/main/**/build/
