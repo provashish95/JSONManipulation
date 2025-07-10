@@ -4,7 +4,7 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 
-public class FileWrite {
+public class FileReadWrite {
     public static void main(String[] args) throws IOException {
 
         //writeFile("./src/main/resources/test.txt", true);
