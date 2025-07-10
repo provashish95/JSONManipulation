@@ -1,0 +1,10 @@
+{
+  "address": "dhaka",
+  "name": "provashish",
+  "designation": "SQA",
+  "hobby": {
+    "language-3": "Java",
+    "language-2": "JavaScript",
+    "language-1": "C programming"
+  }
+}
