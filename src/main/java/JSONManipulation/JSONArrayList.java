@@ -1,6 +1,5 @@
 package JSONManipulation;
 
-import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
@@ -12,7 +11,7 @@ import java.io.IOException;
 public class JSONArrayList {
     public static void main(String[] args) throws IOException, ParseException {
         JSONParser jsonParser = new JSONParser();
-        JSONArray jsonArray = (JSONArray) jsonParser.parse(new FileReader("./src/main/resources/emp.json"));
+        org.json.simple.JSONArray jsonArray = (org.json.simple.JSONArray) jsonParser.parse(new FileReader("./src/main/resources/emp.json"));
 
         JSONObject empObj = new JSONObject();
         empObj.put("name", "Roy");
